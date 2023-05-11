@@ -1,0 +1,21 @@
+<meta charset="UTF-8">
+<script>
+    var edadArtu = 28;
+    var edadLuisa = 25;
+    var edadMigue = 21;
+
+    function saltoLinea () {
+        document.write("<br><br><br><hr>")
+    }
+
+    function imprimir (mensaje) {
+        document.write("<big>" + mensaje + "</big>");
+        saltoLinea();
+
+    }
+
+    imprimir("Mi diferencia de edad con mi hermano mayor Arturo es de " + (edadArtu - edadLuisa) 
+    + "años, el tiene " + edadArtu + "años y yo " + edadLuisa + "años.");
+    imprimir("Mi diferencia de edad con mi hermano mayor Arturo es de " + (edadLuisa - edadMigue) 
+    + "años, el tiene " + edadMigue + "años y yo " + edadLuisa + "años.");
+</script>

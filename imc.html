@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+<script>
+        function saltoLinea () {
+        document.write("<br><br><br><hr>")
+    }
+
+    function imprimir (mensaje) {
+        document.write("<big>" + mensaje + "</big>");
+        saltoLinea();
+
+    }
+
+    function calcularIMC (peso, altura) {
+        imc = peso / (altura*altura);
+        return imc;
+    }
+
+    var peso = prompt("Ingresa el peso de Luisa en kilos");
+    var altura = prompt("Ingresa la altura de Luisa en metros, incluyendo los centímetros");
+    var imc1 = calcularIMC(peso,altura);
+    imprimir ("El IMC de Luisa es de: " + imc1);
+
+    var peso = prompt("Ingresa el peso de Arturo en kilos");
+    var altura = prompt("Ingresa la altura de Arturo en metros, incluyendo los centímetros");
+    var imc2 = calcularIMC(peso,altura);
+    imprimir ("El IMC de Artu es de: " + imc2);
+
+    var peso = prompt("Ingresa el peso de Migue en kilos");
+    var altura = prompt("Ingresa la altura de Migue en metros, incluyendo los centímetros");
+    var imc3 = calcularIMC(peso,altura);
+    imprimir ("El IMC de Migue es de: " + imc3);
+
+    function calcularPromedioIMC(imc1, imc2, imc3) {
+        promedio = (imc1 + imc2 + imc3) / 3;
+        return promedio;
+    }
+
+    var promedio = calcularPromedioIMC(imc1,imc2,imc3);
+    imprimir("El promedio del IMC de los 3 hermanos es de: " + promedio);
+
+</script>
